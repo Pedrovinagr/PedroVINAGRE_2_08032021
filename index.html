@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>reservia</title>
 </head>
 <body>
-    
+    <div id="bloc_page">
+        <header>
+            <div id="En-tête">
+                <div id="logo">
+                    <img src="images/Logo/Reservia@3x.png" alt="Logo de Reservia" />   
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div id="carte_A"> <!-- zone de recherche -->
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p> <dr />
+
+                <div id="zone_de_recherche"> <!-- localisation -->
+                    <form method="post" action="traitement.php">
+                        <div class="input_container">
+                            <span class="input_icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <input type="search" />
+                            <input type="submit" value="Rechercher" />
+                        </div>
+                    </form>
+                </div>
+
+                <div id="filtres"> <!-- zone de filtre -->
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <h2>Filtres</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Économique</a></li>
+                                    <li><a href="#">Familial</a></li>
+                                    <li><a href="#">Romantique</a></li>
+                                    <li><a href="#">Animaux autorisés</a></li>
+                                </ul>
+                            </nav>
+                            <P>Plus de 500 logements sont disponibles dans cette ville</P>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="carte_B"> <!-- zone d'hébergement -->
+                <h1>hébergements à Marseille</h1>
+
+                <div id="carte_1"></div> <!-- Auberge la Cannebière -->
+                    <figure>
+                        <a href="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Auberge la Cannebière</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>25€</figcaption>
+                    </figure>
+                </div>
+
+                <div id="carte_2"> <!-- Hôtel du port -->
+                    <figure>
+                        <a href="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Hôtel du port</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>52€</figcaption>
+                    </figure>
+                </div>
+
+                <div id="carte_3"> <!-- Hôtel Les mouettes -->
+                    <figure>
+                        <a href="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Hôtel Les mouettes</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>76€</figcaption>
+                    </figure>
+                </div>
+
+                <div id="carte_4"> <!-- Hôtel de la mer -->
+                    <figure>
+                        <a href="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Hôtel de la mer</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>46€</figcaption>
+                    </figure>
+                </div>
+
+                <div id="carte_5"> <!-- Auberge Le Panier -->
+                    <figure>
+                        <a href="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Auberge Le Panier</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>23€</figcaption>
+                    </figure>
+                </div>
+
+                <div id="carte_6"> <!-- Hôtel chez Amina -->
+                    <figure>
+                        <a href="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" title="Cliquez pour agrandir" /></a>
+                        <h2><figcaption>Hôtel chez Amina</figcaption></h2>
+                        <figcaption>Nuit à partir de</figcaption><figcaption>96€</figcaption>
+                    </figure>
+                </div>
+                <p>Afficher plus</p>
+            </div>
+        </section>
 </body>
 </html>
