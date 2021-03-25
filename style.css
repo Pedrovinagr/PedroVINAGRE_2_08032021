@@ -1,5 +1,84 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    
-}
+/* Police */
+body{font-family: 'Raleway', sans-serif;}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;}
+
+
+#logo{/* logo */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;}
+#logo img{
+    width: 90px;
+    height: 30px;}
+
+#navigation ul{/* menu de navigation*/
+    list-style-type: none;
+    display: flex;
+    margin-right: 80px;
+    color: #0065FC;
+    text-decoration: none;
+    justify-content: space-around;}
+
+/*carte A*/
+
+#zone_de_recherche{
+    border: 3px #f2f2f2 solid;
+    border-radius: 10px 10px;
+    }
+
+nav li{
+    border: 3px #f2f2f2 solid;
+    border-radius: 10px 10px;
+    justify-content: space-around;}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    }
+
+/* carte B*/
+
+#carte_B{
+    position: relative;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.9em;}
+
+#carte_1{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.9em;}
+.element1 img{
+    width: 250px;
+    height: 120px;
+    border-radius: 10px; 10px;}      
+.element2{
+    background-color: #fff;}
+#star{
+    display: flex;}
+#bluestar{
+    justify-content: space-around;
+    color: #0065FC;}
+#greystar{
+    justify-content: space-around;
+    color: #f2f2f2;
+    fle;} 
 
