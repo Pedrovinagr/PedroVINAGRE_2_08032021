@@ -59,7 +59,7 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: 50px;}
+    align-content: space-around;}
 
 #carte_1{
     display: flex;
@@ -184,3 +184,226 @@ nav ul{
         justify-content: stretch}
     #bluestar6{
         color: #0065FC;}
+
+#carte_C{
+    width: 300px;
+    height: 630px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px #f2f2f2;
+    border-radius: 10px;
+    padding: 5px;
+    margin: center;}
+
+#bloc_carte2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;}
+
+#carte_7{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element3 img{
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;}      
+    .element4{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+    #star7{
+        display: flex;
+        align-items: stretch;}
+    #bluestar7{
+        color: #0065FC;}
+
+#carte_8{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    #star8{
+        display: flex;}
+    #bluestar8{
+        color: #0065FC;}
+    #greystar8{
+        color: #f2f2f2;
+        margin-left: 3px;}
+
+#carte_9{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    #star9{
+        display: flex;}
+    #bluestar9{
+        color: #0065FC;}
+    #greystar9{
+        color: #f2f2f2;
+        margin-left: 3px;}
+
+#carte_D{
+    padding: 5px;
+    margin: center;}
+#bloc_carte3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;}
+
+#carte_10{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element10A img{
+        width: 305px;
+        height: 390px;
+        border-radius: 10px;}      
+    .element10B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+#carte_11{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 240px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element11A img{
+        width: 305px;
+        height: 180px;
+        border-radius: 10px;}      
+    .element11B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+#carte_12{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 170px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element12A img{
+        width: 305px;
+        height: 110px;
+        border-radius: 10px;}      
+    .element12B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+#carte_13{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element13A img{
+        width: 305px;
+        height: 390px;
+        border-radius: 10px;}      
+    .element13B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+#carte_14{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 195px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element14A img{
+        width: 305px;
+        height: 140px;
+        border-radius: 10px;}      
+    .element14B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+#carte_15{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    width: 305px;
+    height: 210px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 0.9em;}
+    .element15A img{
+        width: 305px;
+        height: 155px;
+        border-radius: 10px;}      
+    .element15B{
+        width: 250px;
+        height: 80px;
+        background-color: #fff;}
+
+footer{
+    background-color: #f2f2f2;display: flex;}
+    
+ul{
+    list-style-type: none;
+    text-decoration: none;}
