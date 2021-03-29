@@ -1,48 +1,126 @@
 /* Police */
-body{font-family: 'Raleway', sans-serif;}
+body{font-family: 'Raleway', sans-serif;
+margin-left: 50px;
+margin-right: 50px;}
+
 
 /* Header */
-
 header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;}
 
-
 #logo{/* logo */
     display: flex;
     flex-direction: row;
     align-items: baseline;}
+
 #logo img{
-    width: 90px;
-    height: 30px;}
+    width: 100px;
+    height: 40px;}
 
 #navigation ul{/* menu de navigation*/
     list-style-type: none;
-    display: flex;
-    margin-right: 80px;
+    display: flex;}
+
+#navigation li{/* menu de navigation*/
+    margin-right: 20px;
+    margin-left: 50px;}
+
+#navigation a{/* menu de navigation*/
     color: #0065FC;
-    text-decoration: none;
-    justify-content: space-around;}
+    text-decoration: none;}
+
 
 /*carte A*/
+#carte_A{
+    padding-bottom: 20px;}
 
+form{
+    display: flex;}
+    
 #zone_de_recherche{
-    border: 3px #f2f2f2 solid;
-    border-radius: 10px 10px;
+    display: flex;
+    border-radius: 10px;
     width: 420px;}
-#filtre h2{
-    display: flex;
-}
-nav li{
-    border: 3px #f2f2f2 solid;
-    border-radius: 10px 10px;
-    justify-content: space-around;}
 
-nav ul{
-    list-style-type: none;
+#input_container1{
+    width: 60px;
+    height: 40px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    padding-top: 5px;}
+
+span{
+    color: black;
+    font-size: 30px;}
+    
+#input_container2{
+    width: 0px;display: flex;}
+
+    /*filtres*/
+#filtres{
     display: flex;
-    }
+    padding-top: 20px;
+    padding-bottom: 0px;}
+h2{
+    margin-right: 20px;
+}
+#filtres p{
+    display: flex;}
+
+.fa-money-bill-wave{
+    color: #0065FC;
+    font-size: 17px;
+    width: 40px;
+    height: 30px;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: 30px;}
+.fa-child{
+    color: #0065FC;
+    font-size: 17px;
+    width: 40px;
+    height: 30px;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: 30px;}
+.fa-heart{
+    color: #0065FC;
+    font-size: 17px;
+    width: 40px;
+    height: 30px;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: 30px;}
+.fa-dog{
+    color: #0065FC;
+    font-size: 17px;
+    width: 40px;
+    height: 30px;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: 30px;}
+
+.fa-info{
+    color: #0065FC;
+    font-size: 10px;
+    border: 2px #f2f2f2 solid;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 5px;}
+
 
 /* carte B*/
 
@@ -59,7 +137,8 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;}
+    align-content: space-around;
+    padding-bottom: 50px;}
 
 #carte_1{
     display: flex;
@@ -71,12 +150,12 @@ nav ul{
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
+    padding-bottom: 50px;
     font-size: 0.9em;}
     .element1 img{
         width: 250px;
         height: 100px;
-        border-radius: 10px;}      
+        border-radius: 10px 10px 0px 0px;}      
     .element2{
         width: 250px;
         height: 80px;
