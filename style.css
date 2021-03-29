@@ -1,7 +1,7 @@
 /* Police */
 body{font-family: 'Raleway', sans-serif;
-margin-left: 50px;
-margin-right: 50px;}
+margin-left: 0px;
+margin-right: 0px;}
 
 
 /* Header */
@@ -34,7 +34,7 @@ header{
 
 /*carte A*/
 #carte_A{
-    padding-bottom: 20px;}
+    padding-bottom: 50px;}
 
 form{
     display: flex;}
@@ -57,13 +57,13 @@ span{
     font-size: 30px;}
     
 #input_container2{
-    width: 0px;display: flex;}
+    display: flex;}
 
     /*filtres*/
 #filtres{
     display: flex;
     padding-top: 20px;
-    padding-bottom: 0px;}
+    padding-bottom: 20px;}
 h2{
     margin-right: 20px;
 }
@@ -119,48 +119,63 @@ h2{
     height: 15px;
     text-align: center;
     border-radius: 20px;
-    padding-top: 5px;}
+    padding-top: 4px;}
 
+/*carte hébergement*/
+#hébergement{
+    display: flex;}
 
 /* carte B*/
-
 #carte_B{
-    width: 900px;
-    height: 630px;
+    width: 880px;
+    height: 620px;
     background-color: #f2f2f2;
     box-shadow: 0px 2px 5px #f2f2f2;
-    border-radius: 10px;
-    padding: 5px;
-    margin: center;}
+    border-radius: 20px;
+    padding: 5px;}
+
+#carte_B h1{
+    margin-left: 25px;}
+#carte_B h4{
+    margin-left: 25px;
+    margin-top: -10px;}
 
 #bloc_carte1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    padding-bottom: 50px;}
+    padding-bottom: 10px;}
 
+.element1 img{
+    width: 250px;
+    height: 110px;
+    border-radius: 15px 15px 0px 0px;
+    justify-content: center;}      
+.element2{
+    margin-top: -10px;
+    margin-left: 20px;}
+.element3{
+    margin-top: -30px;
+    margin-left: 20px; }
+.star{
+    margin-top: -10px;
+    margin-left: 20px; }
 #carte_1{
     display: flex;
+    flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
-    flex-direction: column;
     width: 250px;
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
-    padding-bottom: 50px;
-    font-size: 0.9em;}
-    .element1 img{
-        width: 250px;
-        height: 100px;
-        border-radius: 10px 10px 0px 0px;}      
-    .element2{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
-    #star{
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 30px;}
+
+    #star1{
         display: flex;
         align-items: stretch;}
     #bluestar{
@@ -178,9 +193,10 @@ h2{
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin: 5px;
+    margin-bottom: 30px;}
     #star2{
         display: flex;}
     #bluestar2{
@@ -195,9 +211,10 @@ h2{
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin: 5px;
+    margin-bottom: 30px;}
     #star3{
         display: flex;}
     #bluestar3{
@@ -215,9 +232,10 @@ h2{
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin: 5px;
+    margin-bottom: 30px;}
     #star4{
         display: flex;}
     #bluestar4{
@@ -235,9 +253,10 @@ h2{
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin: 5px;
+    margin-bottom: 30px;}
     #star5{
         display: flex;}
     #bluestar5{
@@ -255,50 +274,71 @@ h2{
     height: 200px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin: 5px;
+    margin-bottom: 30px;}
     #star6{
         display: flex;
         justify-content: stretch}
     #bluestar6{
         color: #0065FC;}
 
+
+/*Carte C*/
 #carte_C{
-    width: 300px;
-    height: 630px;
+    width: 420px;
+    height: 620px;
     background-color: #f2f2f2;
     box-shadow: 0px 2px 5px #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    margin: center;}
-
+    margin-left: 30px;}
+#carte_C h1{
+    margin-left: 20px;}
+#entête{
+    display: flex;}
+.fa-chart-line{
+    font-size: 30px;
+    margin-left: 100px;
+}
 #bloc_carte2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;}
-
+    
+.element4 img{
+    width: 130px;
+    height: 145px;
+    border-radius: 15px 0px 0px 15px;
+    margin-top: 0px;
+    margin-left: 0px;}      
+.element5{
+    width: 180px;
+    margin-left: 150px;
+    margin-top: -150px;}
+.element6{
+    width: 200px;
+    margin-left: 150px;
+    margin-top: -25px;}
+.star99{
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 10px;}
+    
 #carte_7{
     display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: row;
-    width: 250px;
-    height: 200px;
+    flex-direction: column;
+    width: 345px;
+    height: 145px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
-    .element3 img{
-        width: 250px;
-        height: 100px;
-        border-radius: 10px;}      
-    .element4{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+    margin-top: 5px;
+    margin-bottom: 20px;}
+
     #star7{
         display: flex;
         align-items: stretch;}
@@ -307,16 +347,15 @@ h2{
 
 #carte_8{
     display: flex;
-    justify-content: stretch;
-    align-items: stretch;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
+    width: 345px;
+    height: 145px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin-top: 5px;
+    margin-bottom: 20px;}
     #star8{
         display: flex;}
     #bluestar8{
@@ -327,16 +366,15 @@ h2{
 
 #carte_9{
     display: flex;
-    justify-content: stretch;
-    align-items: stretch;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
+    width: 345px;
+    height: 145px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
-    font-size: 0.9em;}
+    margin-top: 5px;
+    margin-bottom: 20px;}
     #star9{
         display: flex;}
     #bluestar9{
@@ -345,9 +383,12 @@ h2{
         color: #f2f2f2;
         margin-left: 3px;}
 
+/*Carte*/
 #carte_D{
-    padding: 5px;
-    margin: center;}
+    padding: 0px;
+    margin: center;
+    margin-top: 50px;}
+
 #bloc_carte3{
     display: flex;
     flex-wrap: wrap;
@@ -363,17 +404,15 @@ h2{
     height: 450px;
     background-color: #fff;
     box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
+    border-radius: 20px;
+    padding: 0px;}
     .element10A img{
         width: 305px;
         height: 390px;
-        border-radius: 10px;}      
+        border-radius: 20px 20px 0px 0px;}      
     .element10B{
         width: 250px;
-        height: 80px;
-        background-color: #fff;}
+        height: 50px;}
 
 #carte_11{
     display: flex;
