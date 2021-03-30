@@ -33,42 +33,61 @@ header{
 
 
 /*carte A*/
-#carte_A{
-    padding-bottom: 50px;}
-
+#carte_A
+ 
 form{
-    display: flex;}
-    
-#zone_de_recherche{
     display: flex;
-    border-radius: 10px;
-    width: 420px;}
+    margin-top: 50px;}
 
-#input_container1{
-    width: 60px;
-    height: 40px;
+.fa-map-marker-alt{
+    width: 50px;
+    height: 35px;
     background-color: #f2f2f2;
     text-align: center;
+    padding-top: 15px;
     border-radius: 10px 0px 0px 10px;
-    padding-top: 5px;}
-
-span{
     color: black;
-    font-size: 30px;}
-    
-#input_container2{
-    display: flex;}
+    font-size: 20px;}
 
-    /*filtres*/
+.recherche_localisation{
+    width: 235px;
+    height: 50px;
+    border: 1px #f2f2f2 solid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;}
+
+.submit_recherche{
+    color: white;
+    width: 135px;
+    height: 50px;
+    border: 1px #0065FC solid;
+    background-color: #0065FC;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;}
+
+
+/*filtres*/
 #filtres{
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;}
-h2{
-    margin-right: 20px;
-}
-#filtres p{
+
+#filtres ul{
+    list-style-type: none;
     display: flex;}
+
+#filtres a{
+    margin-left: 30px;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 50px 10px 0px;
+font-weight: bolder;}
 
 .fa-money-bill-wave{
     color: #0065FC;
@@ -79,7 +98,7 @@ h2{
     text-align: center;
     border-radius: 20px;
     padding-top: 12px;
-    margin-left: 30px;}
+    margin-left: -1px;}
 .fa-child{
     color: #0065FC;
     font-size: 17px;
@@ -89,7 +108,7 @@ h2{
     text-align: center;
     border-radius: 20px;
     padding-top: 12px;
-    margin-left: 30px;}
+    margin-left: -1px;}
 .fa-heart{
     color: #0065FC;
     font-size: 17px;
@@ -99,7 +118,7 @@ h2{
     text-align: center;
     border-radius: 20px;
     padding-top: 12px;
-    margin-left: 30px;}
+    margin-left: -1px;}
 .fa-dog{
     color: #0065FC;
     font-size: 17px;
@@ -109,18 +128,21 @@ h2{
     text-align: center;
     border-radius: 20px;
     padding-top: 12px;
-    margin-left: 30px;}
+    margin-left: -1px;}
 
 .fa-info{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 15px;
     border: 2px #f2f2f2 solid;
     width: 20px;
     height: 15px;
     text-align: center;
     border-radius: 20px;
-    padding-top: 4px;}
-
+    padding-top: 2px;
+    margin-right: 10px;}
+#info{
+    margin-bottom: 50px;
+}
 /*carte hébergement*/
 #hébergement{
     display: flex;}
@@ -130,7 +152,6 @@ h2{
     width: 880px;
     height: 620px;
     background-color: #f2f2f2;
-    box-shadow: 0px 2px 5px #f2f2f2;
     border-radius: 20px;
     padding: 5px;}
 
@@ -140,18 +161,20 @@ h2{
     margin-left: 25px;
     margin-top: -10px;}
 
-#bloc_carte1{
+#bloc_carte_B{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    padding-bottom: 10px;}
+    }
 
-.element1 img{
+#bloc_carte_B img{
     width: 250px;
     height: 110px;
     border-radius: 15px 15px 0px 0px;
-    justify-content: center;}      
+    justify-content: center;
+    object-fit: cover;}
+
 .element2{
     margin-top: -10px;
     margin-left: 20px;}
@@ -161,7 +184,8 @@ h2{
 .star{
     margin-top: -10px;
     margin-left: 20px; }
-#carte_1{
+
+.carte_hébergements{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -169,7 +193,7 @@ h2{
     width: 250px;
     height: 200px;
     background-color: #fff;
-    box-shadow: 0px 2px 5px black;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 20px;
     padding: 5px;
     margin: 5px;
@@ -183,106 +207,6 @@ h2{
     #greystar{
         color: #f2f2f2;
         margin-left: 3px;} 
-
-#carte_2{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 30px;}
-    #star2{
-        display: flex;}
-    #bluestar2{
-        color: #0065FC;}
-
-#carte_3{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 30px;}
-    #star3{
-        display: flex;}
-    #bluestar3{
-        color: #0065FC;}
-    #greystar3{
-        color: #f2f2f2;
-        margin-left: 3px;}
-
-#carte_4{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 30px;}
-    #star4{
-        display: flex;}
-    #bluestar4{
-        color: #0065FC;}
-    #greystar4{
-        color: #f2f2f2;
-        margin-left: 3px;}
-
-#carte_5{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 30px;}
-    #star5{
-        display: flex;}
-    #bluestar5{
-        color: #0065FC;}
-    #greystar5{
-        color: #f2f2f2;
-        margin-left: 3px;}
-
-#carte_6{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 30px;}
-    #star6{
-        display: flex;
-        justify-content: stretch}
-    #bluestar6{
-        color: #0065FC;}
 
 
 /*Carte C*/
@@ -313,7 +237,9 @@ h2{
     height: 145px;
     border-radius: 15px 0px 0px 15px;
     margin-top: 0px;
-    margin-left: 0px;}      
+    margin-left: 0px;
+    object-fit: cover; }
+         
 .element5{
     width: 180px;
     margin-left: 150px;
@@ -383,137 +309,93 @@ h2{
         color: #f2f2f2;
         margin-left: 3px;}
 
-/*Carte*/
+/*Carte D*/
 #carte_D{
     padding: 0px;
     margin: center;
     margin-top: 50px;}
 
 #bloc_carte3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;}
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    grid-template-areas:
+        "big_left small_1_left big_right small_1_right"
+        "big_left small_2_left big_right small_2_right";}
 
 #carte_10{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 450px;
-    background-color: #fff;
+    grid-area: "big_left";
     box-shadow: 0px 2px 5px black;
     border-radius: 20px;
     padding: 0px;}
     .element10A img{
-        width: 305px;
-        height: 390px;
-        border-radius: 20px 20px 0px 0px;}      
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;}      
     .element10B{
         width: 250px;
         height: 50px;}
 
 #carte_11{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 240px;
-    background-color: #fff;
+    grid-area: "small_1_left";
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
-    .element11A img{
-        width: 305px;
-        height: 180px;
-        border-radius: 10px;}      
+    padding: 5px;}
+        .element11A img{
+        border-radius: 10px;
+        object-fit: cover;}      
     .element11B{
         width: 250px;
         height: 80px;
         background-color: #fff;}
 
 #carte_12{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 170px;
-    background-color: #fff;
+    grid-area: "small_2_left";
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
+    padding: 5px;}
     .element12A img{
-        width: 305px;
-        height: 110px;
-        border-radius: 10px;}      
+        border-radius: 10px;
+        object-fit: cover;}      
     .element12B{
         width: 250px;
         height: 80px;
         background-color: #fff;}
 
 #carte_13{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 450px;
-    background-color: #fff;
+    grid-area: "big_right";
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
+    padding: 5px;}
     .element13A img{
-        width: 305px;
-        height: 390px;
-        border-radius: 10px;}      
+        border-radius: 10px;
+        object-fit: cover;}      
     .element13B{
         width: 250px;
         height: 80px;
         background-color: #fff;}
 
 #carte_14{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 195px;
-    background-color: #fff;
+    grid-area: "small_1_right";
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
+    padding: 5px;}
     .element14A img{
-        width: 305px;
-        height: 140px;
-        border-radius: 10px;}      
+        border-radius: 10px;
+        object-fit: cover;}      
     .element14B{
         width: 250px;
         height: 80px;
         background-color: #fff;}
 
 #carte_15{
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-direction: column;
-    width: 305px;
-    height: 210px;
-    background-color: #fff;
+    grid-area: "small_2_right";
     box-shadow: 0px 2px 5px black;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 0.9em;}
+    padding: 5px;}
     .element15A img{
-        width: 305px;
-        height: 155px;
-        border-radius: 10px;}      
+        border-radius: 10px;
+        object-fit: cover;}      
     .element15B{
         width: 250px;
         height: 80px;
