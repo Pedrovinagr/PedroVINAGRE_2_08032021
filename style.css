@@ -87,7 +87,7 @@ form{
     text-decoration: none;
     text-align: left;
     padding: 10px 50px 10px 0px;
-font-weight: bolder;}
+    font-weight: bolder;}
 
 .fa-money-bill-wave{
     color: #0065FC;
@@ -143,8 +143,8 @@ font-weight: bolder;}
 #info{
     margin-bottom: 50px;
 }
-/*carte hébergement*/
-#hébergement{
+/*carte carte B + carte C*/
+#carteB_carteC{
     display: flex;}
 
 /* carte B*/
@@ -168,23 +168,7 @@ font-weight: bolder;}
     align-content: space-around;
     }
 
-#bloc_carte_B img{
-    width: 250px;
-    height: 110px;
-    border-radius: 15px 15px 0px 0px;
-    justify-content: center;
-    object-fit: cover;}
-
-.element2{
-    margin-top: -10px;
-    margin-left: 20px;}
-.element3{
-    margin-top: -30px;
-    margin-left: 20px; }
-.star{
-    margin-top: -10px;
-    margin-left: 20px; }
-
+/*cartes hébergements*/
 .carte_hébergements{
     display: flex;
     flex-direction: column;
@@ -199,14 +183,38 @@ font-weight: bolder;}
     margin: 5px;
     margin-bottom: 30px;}
 
-    #star1{
-        display: flex;
-        align-items: stretch;}
-    #bluestar{
-        color: #0065FC;}
-    #greystar{
-        color: #f2f2f2;
-        margin-left: 3px;} 
+.carte_hébergements a{
+    text-decoration: none;
+    color: black;}
+
+.carte_hébergements img{
+    width: 250px;
+    height: 110px;
+    border-radius: 15px 15px 0px 0px;
+    justify-content: center;
+    object-fit: cover;}
+
+.carte_hébergements h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;}
+
+.carte_hébergements p{
+    margin-top: -15px;
+    margin-left: 20px;}
+
+#star_hébergements{
+    margin-top: -10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: stretch;}
+
+#bluestar{
+    color: #0065FC;}
+
+#greystar{
+    color: #f2f2f2;
+    margin-left: 3px;} 
 
 
 /*Carte C*/
@@ -214,100 +222,67 @@ font-weight: bolder;}
     width: 420px;
     height: 620px;
     background-color: #f2f2f2;
-    box-shadow: 0px 2px 5px #f2f2f2;
     border-radius: 20px;
     padding: 5px;
     margin-left: 30px;}
-#carte_C h1{
-    margin-left: 20px;}
+
 #entête{
     display: flex;}
+
+#carte_C h1{
+    margin-left: 20px;}
+
 .fa-chart-line{
     font-size: 30px;
-    margin-left: 100px;
-}
-#bloc_carte2{
+    margin-left: 100px;}
+
+#bloc_carte_C{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;}
     
-.element4 img{
+
+/*cartes les plus populaires*/
+.carte_populaires{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: 145px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;}   
+
+.carte_populaires a{
+    text-decoration: none;
+    color: black;}
+
+.carte_populaires img{
     width: 130px;
     height: 145px;
     border-radius: 15px 0px 0px 15px;
     margin-top: 0px;
     margin-left: 0px;
     object-fit: cover; }
-         
-.element5{
+
+.carte_populaires h3{
     width: 180px;
     margin-left: 150px;
-    margin-top: -150px;}
-.element6{
+    margin-top: -140px;}
+
+.carte_populaires p{
     width: 200px;
     margin-left: 150px;
-    margin-top: -25px;}
-.star99{
+    margin-top: -15px;}
+
+#star_populaires{
     width: 200px;
     margin-left: 150px;
-    margin-top: 10px;}
-    
-#carte_7{
-    display: flex;
-    flex-direction: column;
-    width: 345px;
-    height: 145px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;}
+    margin-top: 40px;}
 
-    #star7{
-        display: flex;
-        align-items: stretch;}
-    #bluestar7{
-        color: #0065FC;}
-
-#carte_8{
-    display: flex;
-    flex-direction: column;
-    width: 345px;
-    height: 145px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;}
-    #star8{
-        display: flex;}
-    #bluestar8{
-        color: #0065FC;}
-    #greystar8{
-        color: #f2f2f2;
-        margin-left: 3px;}
-
-#carte_9{
-    display: flex;
-    flex-direction: column;
-    width: 345px;
-    height: 145px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;}
-    #star9{
-        display: flex;}
-    #bluestar9{
-        color: #0065FC;}
-    #greystar9{
-        color: #f2f2f2;
-        margin-left: 3px;}
 
 /*Carte D*/
 #carte_D{
