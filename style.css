@@ -287,10 +287,10 @@ form{
 /*Carte D*/
 #carte_D{
     padding: 0px;
-    margin: center;
-    margin-top: 50px;}
+    margin-top: 50px;
+    margin-bottom: 50px;}
 
-#bloc_carte3{
+#bloc_carte_D{
     display: grid;
     grid-template-columns: repeat(4, 320px);
     grid-template-rows: auto;
@@ -299,86 +299,70 @@ form{
         "big_left small_1_left big_right small_1_right"
         "big_left small_2_left big_right small_2_right";}
 
-#carte_10{
-    grid-area: "big_left";
-    box-shadow: 0px 2px 5px black;
-    border-radius: 20px;
-    padding: 0px;}
-    .element10A img{
-        border-radius: 20px 20px 0px 0px;
-        object-fit: cover;}      
-    .element10B{
-        width: 250px;
-        height: 50px;}
+#bloc_carte_D img{
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;}
 
-#carte_11{
-    grid-area: "small_1_left";
-    box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
-    padding: 5px;}
-        .element11A img{
-        border-radius: 10px;
-        object-fit: cover;}      
-    .element11B{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+#bloc_carte_D h3{
+    margin-top: 10px;
+    margin-left: 20px;}
 
-#carte_12{
-    grid-area: "small_2_left";
-    box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
-    padding: 5px;}
-    .element12A img{
-        border-radius: 10px;
-        object-fit: cover;}      
-    .element12B{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+/*carte activités de Marseille*/
+#carte_activités{
+    display: grid;
+    width: 305px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 20px;}
 
-#carte_13{
-    grid-area: "big_right";
-    box-shadow: 0px 2px 5px black;
-    border-radius: 10px;
-    padding: 5px;}
-    .element13A img{
-        border-radius: 10px;
-        object-fit: cover;}      
-    .element13B{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+.Vieux_Port img{
+    width: 305px;
+    height: 390px;
+    grid-area: "big_left";}      
 
-#carte_14{
-    grid-area: "small_1_right";
-    box-shadow: 0px 2px 5px black;
+.Fort_de_Pomègues img{
     border-radius: 10px;
-    padding: 5px;}
-    .element14A img{
-        border-radius: 10px;
-        object-fit: cover;}      
-    .element14B{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+    width: 305px;
+    height: 180px;
+    grid-area: "small_1_left";}
 
-#carte_15{
-    grid-area: "small_2_right";
-    box-shadow: 0px 2px 5px black;
+.îles_de_Frioul img{
     border-radius: 10px;
-    padding: 5px;}
-    .element15A img{
-        border-radius: 10px;
-        object-fit: cover;}      
-    .element15B{
-        width: 250px;
-        height: 80px;
-        background-color: #fff;}
+    width: 305px;
+    height: 110px;
+    grid-area: "small_2_left";}      
+
+.Parc_National_des_Calanques img{
+    border-radius: 10px;
+    width: 305px;
+    height: 390px;
+    grid-area: "big_right";}      
+
+.Notre_Dame_de_la_Garde img{
+    border-radius: 10px;
+    width: 305px;
+    height: 140px;
+    grid-area: "small_1_right";}      
+
+.Parc_Longchamp img{
+    border-radius: 10px;
+    width: 305px;
+    height: 155px;
+    grid-area: "small_2_right";}      
 
 footer{
-    background-color: #f2f2f2;display: flex;}
+    background-color: #f2f2f2;
+    display: flex;}
     
-ul{
-    list-style-type: none;
-    text-decoration: none;}
+footer ul{
+    list-style-type: none;}
+
+footer a{
+    text-decoration: none;
+    color: black;}
+
+#A_propos{
+    margin-right: 200px;}
+
+#Nos_hébergements{
+    margin-right: 200px;}
