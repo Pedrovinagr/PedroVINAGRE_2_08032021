@@ -1,16 +1,18 @@
 /* Police */
-body{font-family: 'Raleway', sans-serif;
-margin-left: 0px;
-margin-right: 0px;}
+body{
+    font-family: 'Raleway', sans-serif;}
 
+/* Eléments principaux de la page */
+header, section{
+    margin-left: 50px;
+    margin-right: 50px;}
 
-/* Header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;}
 
-#logo{/* logo */
+#logo{
     display: flex;
     flex-direction: row;
     align-items: baseline;}
@@ -19,21 +21,23 @@ header{
     width: 100px;
     height: 40px;}
 
-#navigation ul{/* menu de navigation*/
+/* menu de navigation*/
+#navigation ul{
     list-style-type: none;
     display: flex;}
 
-#navigation li{/* menu de navigation*/
+#navigation li{
     margin-right: 20px;
     margin-left: 50px;}
 
-#navigation a{/* menu de navigation*/
+#navigation a{
     color: #0065FC;
     text-decoration: none;}
 
 
 /*carte A*/
-#carte_A
+#carte_A{
+    align-items: baseline;}
  
 form{
     display: flex;
@@ -286,7 +290,6 @@ form{
 
 /*Carte D*/
 #carte_D{
-    padding: 0px;
     margin-top: 50px;
     margin-bottom: 50px;}
 
