@@ -293,66 +293,55 @@ form{
     margin-top: 50px;
     margin-bottom: 50px;}
 
-#bloc_carte_D{
-    display: grid;
-    grid-template-columns: repeat(4, 320px);
-    grid-template-rows: auto;
-    grid-gap: 50px;
-    grid-template-areas:
-        "big_left small_1_left big_right small_1_right"
-        "big_left small_2_left big_right small_2_right";}
-
-#bloc_carte_D img{
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;}
-
-#bloc_carte_D h3{
-    margin-top: 10px;
-    margin-left: 20px;}
-
 /*carte activités de Marseille*/
 #carte_activités{
-    display: grid;
     width: 305px;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 20px;}
 
-.Vieux_Port img{
+#carte_activités img{
     width: 305px;
-    height: 390px;
-    grid-area: "big_left";}      
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;}
 
-.Fort_de_Pomègues img{
-    border-radius: 10px;
-    width: 305px;
-    height: 180px;
-    grid-area: "small_1_left";}
+.bloc_carte_D{
+    display: grid;
+    grid-template-columns: repeat(4, 305px);
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-template-areas:
+        "vieux_port fort_de_pomègues parc_nationnal_des_calanques notre_dame_de_la_garde"
+        "vieux_port iles_du_frioul parc_nationnal_des_calanques parc_longchamp";}
 
-.îles_de_Frioul img{
-    border-radius: 10px;
-    width: 305px;
-    height: 110px;
-    grid-area: "small_2_left";}      
+.bloc_carte_D h3{
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 20px 0px;}
+    
+.Vieux_Port{/*width: 305px height: 390px*/ 
+    grid-area: vieux_port;}  
 
-.Parc_National_des_Calanques img{
-    border-radius: 10px;
-    width: 305px;
-    height: 390px;
-    grid-area: "big_right";}      
+.Fort_de_Pomègues{/*width: 305px height: 180px*/
+    grid-area: fort_de_pomègues;}
 
-.Notre_Dame_de_la_Garde img{
-    border-radius: 10px;
-    width: 305px;
-    height: 140px;
-    grid-area: "small_1_right";}      
+.îles_de_Frioul{/*width: 305px height: 110px*/
+    grid-area: iles_du_frioul;}      
 
-.Parc_Longchamp img{
-    border-radius: 10px;
-    width: 305px;
-    height: 155px;
-    grid-area: "small_2_right";}      
+.Parc_National_des_Calanques{/*width: 305px height: 390px*/
+    grid-area: parc_nationnal_des_calanques;}      
 
+.Notre_Dame_de_la_Garde{/*width: 305px height: 140px*/
+    grid-area: notre_dame_de_la_garde;}      
+
+.Parc_Longchamp{/*width: 305px height: 155px*/
+    grid-area: parc_longchamp;}
+
+
+
+
+/*pied de page*/
 footer{
     background-color: #f2f2f2;
     display: flex;}
