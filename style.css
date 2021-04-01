@@ -1,8 +1,18 @@
 /* Police */
 body{
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
+}
+
+#bloc_page{
+    width: 1440px;
     margin: auto;
+}
+
+@media all and (max-width: 1024px)/*responsive*/
+{
+    #bloc_page{
+        width: auto;
+    }
 }
 
 /* Eléments principaux de la page */
@@ -29,21 +39,37 @@ header{
 }
 
 /* menu de navigation*/
-#navigation ul{
+nav ul{
     list-style-type: none;
     display: flex;
 }
 
-#navigation li{
+nav li{
     margin-right: 20px;
     margin-left: 50px;
 }
 
-#navigation a{
+nav a{
     color: #0065FC;
     text-decoration: none;
 }
 
+@media all and (max-width: 1024px)/*responsive*/
+{
+    nav ul{
+        width: auto;
+    }
+    
+    nav li{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: none;
+    }
+}
 
 /*carte A*/
 #carte_A{
@@ -387,7 +413,14 @@ form{
         "vieux_port iles_du_frioul parc_nationnal_des_calanques parc_longchamp";
     align-items: stretch;
 }
-    
+
+@media all and (max-width: 1024px)/*responsive*/
+{
+    .grid_carte_D{
+        display: flex;
+
+}
+
 .port{
     grid-area: vieux_port;    
     width: 305px;
@@ -493,3 +526,4 @@ footer a{
 #Nos_hébergements{
     margin-right: 200px;
 }
+
