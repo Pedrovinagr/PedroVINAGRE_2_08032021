@@ -417,7 +417,7 @@ form{
 @media all and (max-width: 1024px)/*responsive*/
 {
     .grid_carte_D{
-        display: flex;
+        display: flex;}
 
 }
 
@@ -526,4 +526,3 @@ footer a{
 #Nos_hébergements{
     margin-right: 200px;
 }
-
