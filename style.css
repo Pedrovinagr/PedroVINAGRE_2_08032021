@@ -49,10 +49,14 @@ header{
 #carte_A{
     align-items: baseline;
 }
- 
+
+#carte_A p{
+    margin-top: -10px;
+} 
+
 form{
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .fa-map-marker-alt{
@@ -111,6 +115,17 @@ form{
     font-weight: bolder;
 }
 
+#filtres a:hover{
+    margin-left: 30px;
+    border: 2px #0065FC solid;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    color: #0065FC;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 50px 10px 0px;
+    font-weight: bolder;
+}
 .fa-money-bill-wave{
     color: #0065FC;
     font-size: 17px;
@@ -339,7 +354,9 @@ form{
 
 
 /*Carte D*/
-
+#carte_D{
+    margin: 50px 0px;
+}
 
 /*carte activités de Marseille*/
 .grid_carte_D img{
@@ -353,8 +370,11 @@ form{
 .grid_carte_D h3{
     margin-top: 10px;
     margin-left: 20px;
-    
 }
+
+.grid_carte_D a{
+    text-decoration: none;
+    color: black;}
 
 .grid_carte_D{
     display: grid;
