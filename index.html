@@ -20,10 +20,17 @@
                 <nav>
                     <ul>
                         <li><a href="#Hébergements">Hébergements</a></li>
-                        <li><a href="#Activités">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
+                        <li><a class="tittle_black" href="#Activités">Activités</a></li>
+                        <li><a class="tittle_bolder" href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
+                <div id="menu_responsive">
+                <a class="inscrire_responsive" href="#">S'inscrire</a>
+                <div class="menu_decale">
+                <a class="hébergements_responsive" href="#Hébergements">Hébergements</a>
+                <a class="activités_responsive" href="#Activités">Activités</a>
+                </div>
+                </div>
             </header>
 
             <section>
@@ -34,19 +41,32 @@
                     <form method="post" action="traitement.php"><!-- localisation -->
                         <i class="fas fa-map-marker-alt"></i>
                         <input class="recherche_localisation" type="search" placeholder="Marseille, France"/>
-                        <input class="submit_recherche" type="submit" value="Rechercher" />  
+                        <input class="submit_recherche" type="submit" value="Rechercher"/>
+                        <div class="recherche_responsive">
+                        <button type="submit" <i class="fas fa-search"></button></div>
                     </form>
 
                     <div id="filtres"> <!-- zone de filtre -->
                         <h2>Filtres</h2>
                         <nav>
                             <ul>
-                                <li><a href="#"><i class="fas fa-money-bill-wave"></i> Économique</a></li>
+                                <li><a class="economique" href="#"><i class="fas fa-money-bill-wave"></i> Économique</a></li>
                                 <li><a class="familial" href="#"><i class="fas fa-child"></i> Familial</a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i> Romantique</a></li>
-                                <li><a href="#"><i class="fas fa-dog"></i> Animaux autorisés</a></li>
+                                <li><a class="romantique"href="#"><i class="fas fa-heart"></i> Romantique</a></li>
+                                <li><a class="animaux"href="#"><i class="fas fa-dog"></i> Animaux autorisés</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div id="filtres_responsive">
+                        <h2>Filtres</h2>
+                        <div id="item_responsive">
+                            <a class="economique" href="#"><i class="fas fa-money-bill-wave"></i> Économique</a>
+                            <a class="familial" href="#"><i class="fas fa-child"></i> Familial</a>
+                            <div id="position_romantique">
+                                <a class="romantique"href="#"><i class="fas fa-heart"></i> Romantique</a>
+                                <a class="animaux"href="#"><i class="fas fa-dog"></i> Animaux autorisés</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="info">
                         <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville

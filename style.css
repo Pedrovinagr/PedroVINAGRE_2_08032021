@@ -8,7 +8,7 @@ body{
     margin: auto;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     #bloc_page{
         min-width: 375px;
@@ -26,7 +26,7 @@ header, section{
     margin-right: 50px;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     header, section{
         margin-left: 0px;
@@ -38,7 +38,7 @@ header{
     justify-content: space-between;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     header{
         flex-direction: column;
@@ -57,6 +57,11 @@ header{
 }
 
 /* menu de navigation*/
+header nav{
+    position: absolute;
+    margin-left: 860px;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -72,11 +77,59 @@ nav a{
     text-decoration: none;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+.tittle_black{
+    color: black;
+    text-decoration: none;
+}
+
+.tittle_bolder{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#menu_responsive a{
+    display: none;
+    text-decoration: none;
+}
+
+.menu_decale{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hébergements_responsive{
+    color: #0065FC;
+    width: 200px;
+    padding-bottom: 5px;
+    justify-content: center;
+    border-bottom: 2px #0065FC solid ;
+}
+
+.activités_responsive{
+    margin-right: 15%;
+}
+
+.inscrire_responsive{
+    position: absolute;
+    width: auto;
+    margin-top: -26px;
+    margin-left: 80%;
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+@media all and (max-device-width: 480px)/*responsive*/
 {
-    nav{
+    header nav{
+        display: none;
         max-width: 375px;
         width: auto;
+        margin: auto;
+    }
+
+    #menu_responsive a{
+        display: flex;
     }
 
     nav ul{
@@ -133,23 +186,94 @@ form{
     font-size: 18px;
 }
 
+button{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+}
 
+.recherche_responsive{
+    display: none;
+}
+
+@media all and (max-device-width: 480px)/*responsive*/
+{
+    .submit_recherche{
+        display: none;
+    }
+    .recherche_responsive{
+        display: flex;
+    }
+}
 /*filtres*/
 #filtres{
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-@media all and (max-width: 1024px)/*responsive*/
+
+#filtres_responsive{
+    display: none;
+    padding-bottom: 20px;
+    max-width: 375PX;
+}
+
+#filtres_responsive a{
+    height: 20px;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 10px 10px 0px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+#filtres_responsive a:hover{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+#filtres_responsive .fa-money-bill-wave, #filtres_responsive .fa-child, #filtres_responsive .fa-heart, #filtres_responsive .fa-dog{
+    color: #0065FC;
+    font-size: 17px;
+    width: 40px;
+    height: 30px;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-left: -1px;
+    margin-top: -20px;
+}
+#item_responsive{
+    display: flex;
+    width: auto;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+#position_romantique{
+    display: flex;
+    margin-top: 55px;
+    margin-left: -370px;
+    flex-direction: column;
+}
+@media all and (max-device-width: 480px)/*responsive*/
 {
-    #filtres ul{
-        margin-top: 60px;
-        margin-left: -110px;
-        flex-direction: column;
+    #filtres{
+        display: none;
     }
-    #filtres li{
-        padding: 10px 0px;
+    #filtres_responsive{
+        display: flex;
     }
+
 }
 #filtres ul{
     list-style-type: none;
@@ -173,43 +297,7 @@ form{
     text-decoration: none;
 }
 
-.fa-money-bill-wave{
-    color: #0065FC;
-    font-size: 17px;
-    width: 38px;
-    height: 28px;
-    background-color: #DEEBFF;
-    text-align: center;
-    border-radius: 20px;
-    padding-top: 12px;
-    margin-left: -1px;
-}
-
-.fa-child{
-    color: #0065FC;
-    font-size: 17px;
-    width: 40px;
-    height: 30px;
-    background-color: #DEEBFF;
-    text-align: center;
-    border-radius: 20px;
-    padding-top: 12px;
-    margin-left: -1px;
-}
-
-.fa-heart{
-    color: #0065FC;
-    font-size: 17px;
-    width: 40px;
-    height: 30px;
-    background-color: #DEEBFF;
-    text-align: center;
-    border-radius: 20px;
-    padding-top: 12px;
-    margin-left: -1px;
-}
-
-.fa-dog{
+#filtres .fa-money-bill-wave, #filtres .fa-child, #filtres .fa-heart, #filtres .fa-dog{
     color: #0065FC;
     font-size: 17px;
     width: 40px;
@@ -242,7 +330,7 @@ form{
     display: flex;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     #carteB_carteC{
         flex-direction: column-reverse;
@@ -261,7 +349,7 @@ form{
     padding: 5px;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     #carte_B{
         min-width: 375px;
@@ -359,7 +447,7 @@ form{
     margin-left: 30px;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     #carte_C{
         min-width: 375px;
@@ -479,19 +567,18 @@ form{
     align-items: stretch;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     .grid_carte_D{
         max-width: 375px;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     .port, .pomègues, .frioul, .calanques, .NDG, .longchamp{
         min-width: 375px;
         max-height: 165px;
         margin: 20px 0px;
-        padding: 0px 0px;
-
     }
     
     .grid_carte_D img{
@@ -592,7 +679,7 @@ footer{
     justify-content: space-around;
 }
 
-@media all and (max-width: 1024px)/*responsive*/
+@media all and (max-device-width: 480px)/*responsive*/
 {
     footer{
         display: flex;
